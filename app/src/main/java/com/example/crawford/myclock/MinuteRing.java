@@ -44,13 +44,6 @@ public class MinuteRing extends View {
     }
 
     protected void initPaint(){
-//        textPaint = new Paint();
-//        textPaint.setColor(Color.rgb(0, 0, 255));
-//        textPaint.setStyle(Paint.Style.FILL_AND_STROKE);
-//        //textPaint.setStrokeWidth(200);
-//        textPaint.setAntiAlias(true);
-//        textPaint.setStrokeCap(Paint.Cap.ROUND);
-//        textPaint.setTextSize(100);
 
         circlePaint = new Paint();
         circlePaint.setColor(Color.rgb(0, 0, 125));
@@ -72,11 +65,6 @@ public class MinuteRing extends View {
 
         ctime = Calendar.getInstance();
         minutes = ctime.get(Calendar.MINUTE);
-
-        //REMOVE - Debug
-        //canvas.drawText(Integer.toString(minutes), 400,200,textPaint);
-        //canvas.drawText(Integer.toString(GetMinutesInDegrees()), getWidth()-300, getHeight()-300, textPaint);
-        //
 
         canvas.drawCircle(getWidth()/2.0f, getHeight()/2.0f, radius, circlePaint);
 

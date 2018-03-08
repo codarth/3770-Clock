@@ -45,13 +45,6 @@ public class HourRing extends View {
     }
 
     protected void initPaint(){
-//        textPaint = new Paint();
-//        textPaint.setColor(Color.rgb(0, 0, 255));
-//        textPaint.setStyle(Paint.Style.FILL_AND_STROKE);
-//        //textPaint.setStrokeWidth(200);
-//        textPaint.setAntiAlias(true);
-//        textPaint.setStrokeCap(Paint.Cap.ROUND);
-//        textPaint.setTextSize(100);
 
         circlePaint = new Paint();
         circlePaint.setColor(Color.rgb(0, 100, 0));
@@ -74,11 +67,6 @@ public class HourRing extends View {
         ctime = Calendar.getInstance();
         ctime.setTimeZone(TimeZone.getFrozenTimeZone("America/Edmonton"));
         Hours = ctime.get(Calendar.HOUR);
-
-        //REMOVE - Debug
-        //canvas.drawText(Integer.toString(Hours), 600,200,textPaint);
-        //canvas.drawText(Integer.toString(GetHoursInDegrees()), getWidth()-300, getHeight()-500, textPaint);
-        //
 
         canvas.drawCircle(getWidth()/2.0f, getHeight()/2.0f, radius, circlePaint);
 

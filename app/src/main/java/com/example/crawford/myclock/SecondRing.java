@@ -44,13 +44,6 @@ public class SecondRing extends View {
     }
 
     protected void initPaint(){
-//        textPaint = new Paint();
-//        textPaint.setColor(Color.rgb(0, 0, 255));
-//        textPaint.setStyle(Paint.Style.FILL_AND_STROKE);
-//        //textPaint.setStrokeWidth(200);
-//        textPaint.setAntiAlias(true);
-//        textPaint.setStrokeCap(Paint.Cap.ROUND);
-//        textPaint.setTextSize(100);
 
         circlePaint = new Paint();
         circlePaint.setColor(Color.rgb(125, 0, 0));
@@ -72,11 +65,6 @@ public class SecondRing extends View {
 
         ctime = Calendar.getInstance();
         seconds = ctime.get(Calendar.SECOND);
-
-        //REMOVE - Debug
-        //canvas.drawText(Integer.toString(seconds), 200,200,textPaint);
-        //canvas.drawText(Integer.toString(GetSecondsInDegrees()), getWidth()-300, getHeight()-100, textPaint);
-        //
 
         canvas.drawCircle(getWidth()/2.0f, getHeight()/2.0f, radius, circlePaint);
 
